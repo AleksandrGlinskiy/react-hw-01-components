@@ -18,7 +18,9 @@ export const Statistics = ({title, stats}) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(PropTypes.number)
+  stats: PropTypes.array,
+  label: PropTypes.number,
+  percentage: PropTypes.number,
   
 
 }
