@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import { Container, Item, Label, Percentage, StatList, Title } from './Statistics.styled';
 
 export const Statistics = ({title, stats}) => {
-  return (<section className="statistics">
-  {title && <h2 className="title">{title}</h2>}
+  return (<Container>
+  {title && <Title>{title}</Title>}
 
-  <ul className="stat-list">
+  <StatList>
     {stats.map(item => (
-      <li className="item" key ={item.id}>
-        <span className="label">{item.label}</span>
-        <span className="percentage">{item.percentage}%</span>
-      </li>
+      <Item key ={item.id}>
+        <Label>{item.label}</Label>
+        <Percentage>{item.percentage}%</Percentage>
+      </Item>
     ))}
-  </ul>
-</section>
+  </StatList>
+</Container>
   )
 }
 
@@ -24,3 +25,13 @@ Statistics.propTypes = {
   
 
 }
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i+= 1) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+console.log(getRandomColor());;
