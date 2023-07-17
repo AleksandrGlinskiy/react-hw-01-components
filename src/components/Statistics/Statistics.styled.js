@@ -1,16 +1,15 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
-  for (var i = 0; i < 6; i+= 1) {
+  for (var i = 0; i < 6; i += 1) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
 }
 
-
 export const Container = styled.section`
-  background-color : gray;
+  background-color: gray;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -19,8 +18,8 @@ export const Container = styled.section`
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
-`
-export const Title = styled.h2 `
+`;
+export const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
   max-width: 100%;
@@ -29,32 +28,31 @@ export const Title = styled.h2 `
   margin: 0;
   color: gray;
   font-weight: bold;
+`;
 
-`
-
-export const StatList = styled.ul `
+export const StatList = styled.ul`
   list-style: none;
   display: flex;
   margin: 0;
   justify-content: space-around;
   padding: 0;
   align-items: center;
-`
+`;
 
-export const Item = styled.li `
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 9px;
   align-items: center;
   border: 1px solid #bbbdc0;
   background-color: purple;
-`
-export const Label = styled.span `
+`;
+export const Label = styled.span`
   color: white;
   font-size: medium;
-`
+`;
 
-export const Percentage = styled.span `
+export const Percentage = styled.span`
   color: white;
   font-size: large;
-  `
+`;

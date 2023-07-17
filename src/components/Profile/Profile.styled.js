@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color : gray;
+  background-color: gray;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -10,9 +10,8 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
- `
+`;
 export const Description = styled.div`
-
   background-color: white;
   padding: 20px;
   display: flex;
@@ -21,23 +20,23 @@ export const Description = styled.div`
   justify-content: center;
   width: 200px;
   height: 250px;
-  `
+`;
 
-export const Avatar = styled.img `
+export const Avatar = styled.img`
   border-radius: 50%;
   width: 100px;
   background-color: brown;
-  `
+`;
 export const Name = styled.p`
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 0;
-`
-export const Tag = styled.p `
+`;
+export const Tag = styled.p`
   margin-top: 10px;
   color: #aeb7c0;
   margin-bottom: 0;
-`
+`;
 export const Stats = styled.ul`
   display: flex;
   list-style: none;
@@ -46,23 +45,21 @@ export const Stats = styled.ul`
   height: 60px;
   margin: 0;
   background-color: green;
-  
-`
+`;
 
-export const StatsItem = styled.li `
+export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 8px;
   justify-content: center;
   width: calc((100%-3px) / 3);
-  
-`
+`;
 
-export const Label = styled.span `
+export const Label = styled.span`
   color: #aeb7c0;
-`
-export const Quantity = styled.span `
-margin-top: 3px;
+`;
+export const Quantity = styled.span`
+  margin-top: 3px;
   font-weight: bold;
-`
+`;
